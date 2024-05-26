@@ -265,7 +265,7 @@ class HomePage extends StatelessWidget {
                   children: <Widget>[
                     NotificationListener<OverscrollIndicatorNotification>(
                       onNotification: (overscroll) {
-                        overscroll.disallowGlow();
+                        overscroll.disallowIndicator();
                       },
                       child: ListView.separated(
                         physics: ClampingScrollPhysics(),
